@@ -1,0 +1,45 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+			<main>
+				<h1>Projects</h1>
+				<a href="https://music.sillyangel.me" class="button" style="background-color: #222222;">
+					<img src="musicss.png" alt="Music Site Preview" width="1365" height="610">
+					Music Player
+				</a>
+			</main>
+
+			<style>
+			.button {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 10px 20px;
+				color: #fff;
+				border: none;
+				border-radius: 5px;
+				text-decoration: none;
+				text-align: center;
+				cursor: pointer;
+				margin: 10px; /* Add space around the button */
+			}
+
+			.button img {
+				margin-bottom: 10px; /* Space between the image and the text */
+			}
+			</style>
+		</main>
+		<Footer />
+	</body>
+</html>
