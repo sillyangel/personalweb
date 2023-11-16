@@ -8,6 +8,6 @@ import netlify from "@astrojs/netlify/functions";
 export default defineConfig({
   site: 'https://sillyangel.me',
   integrations: [mdx(), sitemap()],
-  output: "server",
+  output: "hybrid",
   adapter: netlify()
 });
