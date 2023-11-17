@@ -1,5 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
+import Button from '../components/button.astro'
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
@@ -14,51 +15,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header title={SITE_TITLE} />
 			<main>
 				<h1>Projects</h1>
-				<a href="https://music.sillyangel.me" class="button" style="background-color: #222222;">
-					<img src="/musicss.png" alt="Music Site Preview" width="1365" height="610">
-					Music Player
-				</a>
-				<a href="https://bfgs.sillyangel.me" class="button" style="background-color: #000000;">
-					<img src="/bfgss.png" alt="Bigfoot Game Shack Preview" width="1365" height="614">
-					Bigfoot (Login Required)
-				</a>
-				<a href="https://cybriagames.pages.dev/" class="button" style="background-color: #333; color: white;">
-					<img src="/ss3.png" alt="Cybria Games Preview" width="1365" height="614">
-					Cybria Games
-				</a> 
-				<a href="https://music.sillyangel.me/sm64/kdpicsentquaker.htm" class="button" style="background-color: #000000; color: white; font-weight: bolder;">
-					<img src="/sm64.png" alt="Super Mario 64 Preview" width="1365" height="614">
-					Super Mario 64
-				</a> 
-				<a href="https://sillyangel.me/#" class="button" style="background-color: #f0f0f0; color: black;">
-					<img src="https://abc-utc.fiu.edu/wp-content/uploads/2018/06/Under-Construction-Sign-for-Locator.png" alt=" Note Taking Preview" width="1365" height="614">
-					Notes App
-				</a>
-				<a href="https://sillyangel.me/#" class="button" style="background-color: #f0f0f0; color: black;">
-					<img src="https://abc-utc.fiu.edu/wp-content/uploads/2018/06/Under-Construction-Sign-for-Locator.png" alt=" Note Taking Preview" width="1365" height="614">
-					Calculator
-				</a>
+				<Button href="https://music.sillyangel.me" image="/musicss.png" backgroundcolor="#222222">Music Player</Button>
+				<Button href="https://bfgs.sillyangel.me" image="/bfgss.png" backgroundcolor="#000000">Bigfoot (Login Required)</Button>
+				<Button href="https://cybriagames.pages.dev/" image="/ss3.png" backgroundcolor="#333">Cybria Games</Button> 
+				<Button href="https://music.sillyangel.me/sm64/kdpicsentquaker.htm" image="/sm64.png" backgroundcolor='#000000'>Super Mario 64</Button> 
+				<Button href="https://sillyangel.me/#" image="https://abc-utc.fiu.edu/wp-content/uploads/2018/06/Under-Construction-Sign-for-Locator.png" backgroundcolor="#ffffff">Notes App</Button>
+				<Button href="https://sillyangel.me/#" image="https://abc-utc.fiu.edu/wp-content/uploads/2018/06/Under-Construction-Sign-for-Locator.png" backgroundcolor='#ffffff'>Calculator</Button>
+				<Button href="https://sillyangel.me/#" image="https://abc-utc.fiu.edu/wp-content/uploads/2018/06/Under-Construction-Sign-for-Locator.png" backgroundcolor="#222222">Custom Button</Button>
 			</main>
-
-			<style>
-			.button {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				padding: 10px 20px;
-				color: #fff;
-				border: none;
-				border-radius: 5px;
-				text-decoration: none;
-				text-align: center;
-				cursor: pointer;
-				margin: 10px; /* Add space around the button */
-			}
-
-			.button img {
-				margin-bottom: 10px; /* Space between the image and the text */
-			}
-			</style>
 		</main>
 		<Footer />
 	</body>
